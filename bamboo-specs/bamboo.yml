@@ -7,3 +7,14 @@
 !include 'deployment/plan.yml'
 ---
 !include 'deployment/plan-permissions.yml'
+
+
+version: 2
+plan:
+  project-key: PROJECT
+  key: BUILDPLAN
+  name: Build and Test Plan
+  stages:
+    - jobs:
+        - scripts:
+            - echo "Hello, Bamboo!"
